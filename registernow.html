@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>onlinebazzar</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="indexresponsv.css">
+  <link rel="stylesheet" href="loginresponsive.css">
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      width: 100%;
+      height: fit-content;
+      /* align-items: center;
+            justify-content: center; */
+
+    }
+
+    .loginpage {
+      width: 100%;
+      height: fit-content;
+      background-color: rgba(226, 228, 215, 0.7);
+      margin: auto;
+      padding-bottom: 70px;
+      padding-top: 70px;
+    }
+    .signin1{
+      background: white;
+      padding-top: 50px;
+    }
+    .registerbtn{
+      background: rgb(247, 109, 10);
+      border-radius: 20px;
+      width: 350px;
+      height: 35px;
+      text-transform: capitalize;
+      color: white;
+      font-weight: 500;
+    }
+    .instruction{
+      width:90%;
+       height:500px;
+       
+    }
+    .registerbtn a{
+      font-size: 18px;
+    }
+    .signform form input{
+      width: 300px;
+      height: 40px;
+padding-left: 10px;
+border: 2px solid rgb(19, 19, 19,0.2);
+    }
+    .submitbtn{
+      background: #f05107;
+      width: 120px;
+      height: 30px;
+      border-radius: 20px;
+      font-weight: 500;
+      color: white;
+    }
+    .sociallogin{
+      font-size: 22px;
+      font-weight: 600;
+      color: rgb(54, 54, 247);
+      text-transform: capitalize;
+      letter-spacing: 2px;
+    }
+.otherlnk{
+  border-radius: 40%;
+  margin-left: 10PX;
+}
+@media screen and (max-width:300px) {
+  .instruction{
+    width:90%;
+    margin: 0px;
+  }
+ 
+  
+}
+  </style>
+</head>
+
+<body  class="bg-light">
+  <!-- <%- include('index')-%> -->
+  <div class="mainhead">
+    <div class="logo">
+      <a href="index.html"> <img src="image/R4me logo.png" alt=""></a>
+    </div>
+    <div class="location">
+      <!-- <span  type="text" class="livelocation" id="map"> -->
+
+      <select class="dropdown-item border-circle-3"
+        style="margin-left: -22px; text-transform: capitalize; width: 150px; margin-top: -2px; border: none; outline: none; border-radius:30px;"
+        name="" id="">
+        <option class="" selected>country</option>
+        <option value="">india</option>
+        <option value="">america</option>
+        <option value="">pakistan</option>
+        <option value="">chaina</option>
+        <option value="">russian</option>
+        <option value="">nepal</option>
+        <option value="">bhutan</option>
+      </select>
+
+      <!-- </span> -->
+      <!-- <button class="locationsearch" id="locationsearch" type="button" onclick="initMap()">
+            <img id="location" src="image/location btn-img.png" alt=""></button> -->
+
+      </form>
+    </div>
+
+    <div class="rentbtn">
+      <button type="button"> give on rent</button>
+    </div>
+    <div class="dropdown">
+      <select class=" btn form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <option selected>all category &nbsp; &nbsp;</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">ThreeBBVB H BJBJB BHB HHH H</option>
+      </select>
+
+    </div>
+    <div class="searchbar">
+      <form class="d-flex search">
+        <input class=" " type="search" placeholder="Search" aria-label="Search">
+        <button class="btn  " type="submit"><img src="image/serach icon.png" alt=""></button>
+      </form>
+    </div>
+    <!-- =========responsive serach btn= -->
+    <div class="rentbtnresponsive">
+
+      <div class="searchbar">
+        <form class="d-flex search">
+          <input class=" " type="search" placeholder="Search" aria-label="Search">
+          <button class="btn  " type="submit"><img src="image/serach icon.png" alt=""></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="signin">
+      <a class="signlink" href="/login.html"> <button class="signbtn">sign In</button>
+        <span
+          style="position: absolute; top: 3px; margin-left: 30px; background-color: rgba(239, 28, 28, 0.3);
+                 color: rgb(18, 17, 17); font-size: larger; border-radius: 30px; width: 30px; height: 30px; text-align: center;">0</span></a>
+    </div>
+    <a class="basketicon" href=""> <img src="image/purchase basket.png" alt=""></a>
+
+  </div>
+  <!-- ====================== -->
+  <!-- create a navbavr with responsive***** -->
+  <div class="responsivenavbar">
+    <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+
+        <!-- tongale bar for responsve  -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <!-- logo and link company main page  -->
+        <a class="navbar-brand bg-primary" href="index.html">
+          <img src="image/R4me logo.png" alt="">
+        </a>
+
+        <!-- create a button give in rent..  -->
+        <div class="rentbtn">
+          <button type="button"> give on rent</button>
+        </div>
+
+        <!-- create a basket icon button  -->
+
+        <a class="basketicon" href=""> <img src="image/purchase basket.png" alt=""> </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-0  mb-lg-5 bg-light">
+            <li class="nav-item">
+              <div class="location">
+                <span type="text" class="livelocation" id="map">india
+                </span>
+                <button class="locationsearch" id="locationsearch" type="button" onclick="initMap()">
+                  <img id="location" src="image/location btn-img.png" alt=""></button>
+
+
+              </div>
+            </li>
+            <li class="nav-item">
+
+              <div class="dropdown">
+                <select class=" btn form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                  <option  selected>all category &nbsp; &nbsp;</option>
+                  <option value="1">automobiles</option>
+                  <option value="2">biking & hiking gears</option>
+                  <option value="3">books</option>
+                  <option value="4">camera & lenses</option>
+                  <option value="5">construction machine & manpower</option>
+                  <option value="6">drones</option>
+                  <option value="7">electronics</option>
+                  <option value="8">events</option>
+                  <option value="9">fitness & sport equipment</option>
+                  <option value="10">furniture</option>
+                  <option value="11">gardening</option>
+                  <option value="12">generators</option>
+                  <option value="13">home appliance</option>
+                  <option value="14">jewellery</option>
+                  <option value="15">kids utility</option>
+                  <option value="16">machine & tools</option>
+                  <option value="17">medical equipment</option>
+                  <option value="18">musical instrument</option>
+                  <option value="19">others</option>
+                </select>
+
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="signin">
+                <a class="signlink" href="login.html"> <button class="signbtn">sign In</button> </a>
+              </div>
+            </li>
+
+
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+
+  
+
+  <div class="loginpage  ">
+    <!-- <div style="width: 100%; box-sizing: border-box; text-align:center;">
+      <img class="instruction" src="image/singn in page.gif" alt="">
+    </div> -->
+    <div class=" signin1 bg-dark  ">
+      <center>
+        <h3 style="color: rgb(26, 25, 24); text-transform: capitalize; color: antiquewhite;">register here</h3>
+        <br>
+        <button class=" registerbtn ">allready register users <a href="login.html">log in now</a></button>
+      </center>
+      <div class="  signform  text-center mx-2  mt-5" >
+<form action="" class=" text-center " >
+  <input class=" text-uppercase " type="text" placeholder="full name*"><br><br>
+
+  <input class=" text-capitalize" type="number" placeholder=" mobile no.*" required><br><br>
+  <input class=" text-uppercase" type="email" placeholder="enter email.*" required><br><br>
+  <input class="text-uppercase" type="password"  name="password" placeholder="password *"><br><br>
+  <input class="  text-uppercase" type="password"  name="password" placeholder="re-enter password *">
+<P class="text-left align-left mt-5">
+  <a class=" text-decoration-none text-capitalize" href="#"> forget your password</a>
+  <span class="ms-5 ps-5"> <button class="ms-5 submitbtn text-capitalize  " type="submit">register</button></span>
+</P>
+<p class="text-left align-left  pe-5">
+  <br>
+  <span class="sociallogin pe-5">Social login</span>
+  <a href=""><img class="bg-primary otherlnk" src="image/facebook icon.png" alt="" width="40px" height="40px"></a>
+  <a href=""><img class="bg-primary otherlnk" src="image/teitter icon.png" alt="" width="40px" height="40px"></a>
+</p>
+  
+</form>
+</div>
+    </div>
+    </div>
+
+
+
+  </div>
+  <div class="aboutus container-fluid">
+    <div class="container">
+      <h3>abouts us</h3>
+      <hr style="background-color: rgb(151, 148, 148); height: 2px;">
+      <p>
+        Rentit4me “R4ME” is the largest rental marketplace where anyone can rent-out anything for free and earn
+        money
+        with the listings. Rentit4me also offers a huge bank of listings from which you can also rent- in anything
+        you
+        desire. <br>
+
+        With Rentit4me, you can list and monetize any of your unused assets starting from Jewellery, Electronics
+        item,
+        Furniture, Gym equipment, Musical Instruments to Cars, Bikes, Drones, Medical equipment and the list is
+        endless.
+        The process of listing is hassle free, with no paperwork and customizable rental period.
+
+
+      </p>
+      <hr style="background-color: rgb(139, 133, 132); height: 2px;">
+      <h6>
+
+        Rent Furniture|Rent Drone|Rent Weddings Dresses| Rent jewellery|Rent Home Appliances|Rent Car|Rent Bike|Rent
+        Musical instruments|Rent Fitness equipment|Rent Books Rent Toys|Rent Camera & Lenses|Rent Gaming
+        Console|Rent
+        Baby Stuff|Rent Medical/Health Equipments
+      </h6>
+    </div>
+
+  </div>
+  <div class="footer">
+    <div class="footer1">
+      <div class="footer2">
+        <img src="image/footer logo renitie4me.png" alt="">
+        <h5>address : <span>gurgaon</span></h5>
+        <h5>telephone : <span>1234567890</span></h5>
+      </div>
+      <!-- ........  -->
+      <div class="footer2">
+        <ul style="list-style-type: none;">
+          <h5> <span>|</span> menu</h5>
+
+          <li><a href="">Add A Product</a></li>
+          <li><a href="">contact us</a></li>
+          <li><a href="">abouts us</a></li>
+          <li><a href="">Submit Requirement / RFP</a></li>
+
+        </ul>
+
+      </div>
+      <!-- ........  -->
+      <div class="footer2">
+        <ul style="list-style-type: none;">
+          <h5><span>|</span> pages</h5>
+
+          <li><a href="">Add A Product</a></li>
+          <li><a href="">contact us</a></li>
+          <li><a href="">abouts us</a></li>
+          <li><a href="">Submit Requirement / RFP</a></li>
+
+        </ul>
+
+      </div>
+      <!-- ........  -->
+      <div class="footer2">
+        <ul style="list-style-type: none;">
+          <h5><span>|</span> supports</h5>
+
+          <li><a href="">Add A Product</a></li>
+          <li><a href="">contact us</a></li>
+          <li><a href="">abouts us</a></li>
+          <li><a href="">Submit Requirement / RFP</a></li>
+
+        </ul>
+
+      </div>
+
+
+    </div>
+    <div class="footerotherlink">
+      <div class="otherlink">
+
+        <a href=""><img src="image/facebook icon.png" alt="" width="30px" height="30px"></a>
+        <!-- <a href=""><img src="image/teitter icon.png" alt="" width="30px" height="30px"></a>
+<a href=""><img src="image/you tube icon.png" alt="" width="30px" height="30px"></a>
+<a href=""><img src="image/linkedin icon.png" alt="" width="30px" height="30px"></a> -->
+      </div>
+
+      <div class="otherlink">
+
+        <!-- <a href=""><img src="image/facebook icon.png" alt="" width="30px" height="30px"></a> -->
+        <a href=""><img src="image/teitter icon.png" alt="" width="30px" height="30px"></a>
+        <!-- <a href=""><img src="image/you tube icon.png" alt="" width="30px" height="30px"></a> -->
+        <!-- <a href=""><img src="image/linkedin icon.png" alt="" width="30px" height="30px"></a> -->
+      </div>
+      <div class="otherlink">
+
+        <!-- <a href=""><img src="image/facebook icon.png" alt="" width="30px" height="30px"></a> -->
+        <!-- <a href=""><img src="image/teitter icon.png" alt="" width="30px" height="30px"></a> -->
+        <a href=""><img src="image/you tube icon.png" alt="" width="30px" height="30px"></a>
+        <!-- <a href=""><img src="image/linkedin icon.png" alt="" width="30px" height="30px"></a> -->
+      </div>
+      <div class="otherlink">
+
+        <!-- <a href=""><img src="image/facebook icon.png" alt="" width="30px" height="30px"></a> -->
+        <!-- <a href=""><img src="image/teitter icon.png" alt="" width="30px" height="30px"></a> -->
+        <!-- <a href=""><img src="image/you tube icon.png" alt="" width="30px" height="30px"></a> -->
+        <a href=""><img src="image/linkedin icon.png" alt="" width="30px" height="30px"></a>
+      </div>
+
+      <div class="gooleplaylink">
+        <img src="image/google play.png" alt="" width="180px" height="50px">
+        <img src="image/app store.png" alt="" width="180px" height="50px">
+
+      </div>
+    </div>
+    <p class="Copyright">
+      Copyright 2023 - All right Reserved. | A Unit Of Omshreem Technologies Pvt. Ltd. | Privacy Policy || Terms of
+      Use
+    </p>
+
+
+  </div>
+
+</body>
+
+</html>

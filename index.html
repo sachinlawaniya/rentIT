@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="indexresponsv.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer>
+    <!-- <script> -->
+    function initMap() {
+      // Specify the coordinates of the location
+      var location = { lat: 37.7749, lng: -122.4194 };
+
+      // Create a new map centered at the specified location
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: location
+      });
+
+      // Create a marker at the specified location
+      var marker = new google.maps.Marker({
+        position: location,
+        map: map,
+        title: 'Marker Title'
+      });
+      document.getElementById('map').innerHTML = marker;
+    }
+  </script>
+
+</head>
+
+<body>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- up and down scroll btn  -->
+  <button
+    style="position: fixed; background-color: black; color: white; top: 500px; left:1200px; z-index: 1; width: 50px; height: 50px; border-radius: 30px; transition: 2s; "
+    onclick="window.scrollBy(0,-5200)">/\</button>
+  <button
+    style="position: fixed; background-color: black; color: white; top: 500px; left:1270px; z-index: 1; width: 50px; height: 50px; border-radius: 30px; transition: 2s; "
+    onclick="window.scrollBy(0,5200)">\/</button>
+
+  <!-- create a navbavr with responsive***** -->
+  <div class="responsivenavbar">
+    <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+
+        <!-- tongale bar for responsve  -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <!-- logo and link company main page  -->
+        <a class="navbar-brand bg-primary" href="bootindex.html">
+          <img src="image/R4me logo.png" alt="">
+        </a>
+
+        <!-- create a button give in rent..  -->
+        <div class="rentbtn">
+          <button type="button"> give on rent</button>
+        </div>
+
+        <!-- create a basket icon button  -->
+
+        <a class="basketicon" href=""> <img src="image/purchase basket.png" alt=""> </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-0  mb-lg-5 bg-light">
+            <li class="nav-item">
+              <div class="location">
+                <span type="text" class="livelocation" id="map">india
+                </span>
+                <button class="locationsearch" id="locationsearch" type="button" onclick="initMap()">
+                  <img id="location" src="image/location btn-img.png" alt=""></button>
+
+
+              </div>
+            </li>
+            <li class="nav-item">
+
+              <div class="dropdown">
+                <select class=" btn form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                  <option  selected>all category &nbsp; &nbsp;</option>
+                  <option value="1">automobiles</option>
+                  <option value="2">biking & hiking gears</option>
+                  <option value="3">books</option>
+                  <option value="4">camera & lenses</option>
+                  <option value="5">construction machine & manpower</option>
+                  <option value="6">drones</option>
+                  <option value="7">electronics</option>
+                  <option value="8">events</option>
+                  <option value="9">fitness & sport equipment</option>
+                  <option value="10">furniture</option>
+                  <option value="11">gardening</option>
+                  <option value="12">generators</option>
+                  <option value="13">home appliance</option>
+                  <option value="14">jewellery</option>
+                  <option value="15">kids utility</option>
+                  <option value="16">machine & tools</option>
+                  <option value="17">medical equipment</option>
+                  <option value="18">musical instrument</option>
+                  <option value="19">others</option>
+                </select>
+
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="signin">
+                <a class="signlink" href="login.html"> <button class="signbtn">sign In</button> </a>
+              </div>
+            </li>
+
+
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+
+  <!-- -------=====------- -->
+
+
+  <!-- this is a default nav bar on desktop pages -->
+  <!-- create mainhead and logo -->
+  <div class="mainhead">
+    <div class="logo">
+      <a href="index.html"> <img src="image/R4me logo.png" alt=""></a>
+    </div>
+    <div class="location">
+      <span type="text" class="livelocation " id="map">
+          india
+
+</span>
+      <button class="locationsearch" id="locationsearch" type="button" onclick="initMap()">
+  <img id="location" src="image/location btn-img.png" alt=""></button>
+
+
+  </div>
+
+    <div class="rentbtn">
+      <button type="button"> give on rent</button>
+    </div>
+
+
+    <div class="dropdown">
+      <button type="button" class="btn  text-dark dropdown-toggle" data-bs-toggle="dropdown">
+        all category
+      </button>
+      <ol class="dropdown-menu text-capitalize  " style="height: 400px;overflow-y: auto;">
+        <li><a class="dropdown-item" href="index.html" >all category</a></li>
+        <li><a class="dropdown-item" href="automobiles.html">automobiles</a></li>
+        <li><a class="dropdown-item" href="#">biking & hiking gears</a></li>
+        <li> <a class="dropdown-item" href="#">books</a></li>
+        <li> <a class="dropdown-item" href="#">camera & lenses</a></li>
+        <li> <a class="dropdown-item" href="#">construction machine & manpower</a></li>
+        <li> <a class="dropdown-item" href="#">drones</a></li>
+        <li> <a class="dropdown-item" href="#">electronics</a></li>
+        <li> <a class="dropdown-item" href="#">events</a></li>
+        <li> <a class="dropdown-item" href="#">furniture</a></li>
+        <li> <a class="dropdown-item" href="#">gardening</a></li>
+        <li> <a class="dropdown-item" href="#">generators</a></li>
+        <li> <a class="dropdown-item" href="#">home appliance</a></li>
+        <li> <a class="dropdown-item" href="#">jewellery</a></li>
+        <li> <a class="dropdown-item" href="#">machine & tools</a></li>
+        <li> <a class="dropdown-item" href="#">medical equipment</a></li>
+        <li> <a class="dropdown-item" href="#">musical instrument</a></li>
+        <li> <a class="dropdown-item" href="#">others</a></li>
+      </ol>
+    </div>
+
+
+
+
+    <div class="searchbar">
+      <form class="d-flex search">
+        <input class=" " type="search" placeholder="Search" aria-label="Search">
+        <button class="btn  " type="submit"><img src="image/serach icon.png" alt=""></button>
+      </form>
+    </div>
+    <!-- =========responsive serach btn= -->
+    <div class="rentbtnresponsive">
+
+      <div class="searchbar">
+        <form class="d-flex search">
+          <input class=" " type="search" placeholder="Search" aria-label="Search">
+          <button class="btn  " type="submit"><img src="image/serach icon.png" alt=""></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="signin">
+      <a class="signlink" href="login.html"> <button class="signbtn">sign In</button>
+        <span
+          style="position: absolute; top: 3px; margin-left: 30px; background-color: rgba(239, 28, 28, 0.3);
+             color: rgb(18, 17, 17); font-size: larger; border-radius: 30px; width: 30px; height: 30px; text-align: center;">0</span></a>
+    </div>
+    <a class="basketicon" href=""> <img src="image/purchase basket.png" alt=""></a>
+
+  </div>
+
+
+  <!-- create  a crousal image sildebar -->
+  <div class="imgslider">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner" data-aos="flip-left">
+        <div class="carousel-item active">
+          <a href=""><img src="image/parsal.png" class="d-block w-100" alt="..." a>
+
+        </div>
+        <div class="carousel-item">
+          <a href=""> <img src="image/electronic.png" class="d-block w-100" alt="..."></a>
+
+        </div>
+        <div class="carousel-item">
+          <a href=""><img src="image/washing.png" class="d-block w-100" alt="..."></a>
+
+        </div>
+
+        <div class="carousel-item">
+          <a href=""><img src="image/rent.jpg" class="d-block w-100" alt="..."></a>
+
+        </div>
+
+        <div class="carousel-item">
+          <a href=""><img src="image/shifting.jpg" class="d-block w-100" alt="..."></a>
+
+        </div>
+      </div>
+      <button class="carousel-control-prev imgsliderbtnleft" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next imgsliderbtnright" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </div>
+  <!-- --------------- -->
+  <div class="toprentalcategory">
+    <div class="toprentalheading">
+      <p>
+      <h1>top rental category
+
+      </h1>
+      <button class="viewall">view all</button>
+
+      </p>
+    </div>
+    <!-- -----rent item-- -->
+
+    <div class="toprentitem  " name="leftslide" data-aos="flip-right">
+      <!-- data-bs-target="#carouselExampleCaptions"  -->
+      <div class="topitem" id="topitemslide">
+
+
+        <div class="topitemimg" data-aos="flip-right" data-aos-duration="">
+          <a href="">
+            <img src="image/furniture.png" alt="">
+          </a>
+        </div>
+        <div class="topitemheading">
+          <a href="">
+            <h3>furniture</h3>
+          </a>
+        </div>
+      </div>
+      <div class="topitem" id="topitemslide">
+        <div class="topitemimg" data-aos="flip-right">
+          <a href="">
+            <img src="image/weeding couture.png" alt="">
+          </a>
+        </div>
+        <div class="topitemheading">
+          <a href="">
+            <h3>wedding coulture</h3>
+          </a>
+        </div>
+
+      </div>
+      <div class="topitem" id="topitemslide">
+        <div class="topitemimg" data-aos="flip-right">
+          <a href="">
+            <img src="image/medical.png" alt="">
+          </a>
+        </div>
+        <div class="topitemheading">
+          <a href="">
+            <h3>medical equipment & service</h3>
+          </a>
+        </div>
+
+      </div>
+      <div class="topitem" id="topitemslide">
+        <div class="topitemimg" data-aos="flip-right">
+          <a href="">
+            <img src="image/gaming product.jpg" alt="">
+          </a>
+        </div>
+        <div class="topitemheading">
+          <a href="">
+            <h3>gaming consoles</h3>
+          </a>
+        </div>
+
+      </div>
+      <div class="topitem">
+        <div class="topitemimg" data-aos="flip-right">
+          <a href="">
+            <img src="image/auotomobiles.png" alt="">
+          </a>
+        </div>
+        <div class="topitemheading">
+          <a href="">
+            <h3>automobiles</h3>
+          </a>
+        </div>
+
+      </div>
+      <div class="topitem">
+        <div class="topitemimg" data-aos="flip-right">
+          <a href="">
+            <img src="image/kids utilites.png" alt="">
+          </a>
+        </div>
+        <div class="topitemheading">
+          <a href="">
+            <h3>kids utilities</h3>
+          </a>
+        </div>
+
+      </div>
+      <div class="topitem">
+        <div class="topitemimg" data-aos="flip-right">
+          <a href="">
+            <img src="image/electronic item.png" alt="">
+          </a>
+        </div>
+        <div class="topitemheading">
+          <a href="">
+            <h3>electronic</h3>
+          </a>
+        </div>
+
+      </div>
+      <div class="topitem">
+        <div class="topitemimg" data-aos="flip-right">
+          <a href="">
+            <img src="image/counstraction machines.png" alt="">
+          </a>
+        </div>
+        <div class="topitemheading">
+          <a href="">
+            <h3>construction machines and manpower</h3>
+          </a>
+        </div>
+
+      </div>
+      <div class="topitem">
+        <div class="topitemimg" data-aos="flip-right">
+          <a href="">
+            <img src="image/servce].png" alt="">
+          </a>
+        </div>
+        <div class="topitemheading">
+          <a href="">
+            <h3>service</h3>
+          </a>
+        </div>
+
+
+
+      </div>
+      <div class="topitem">
+        <div class="topitemimg" data-aos="flip-right">
+          <a href="">
+            <img src="image/pets care service.png" alt="">
+          </a>
+        </div>
+        <div class="topitemheading">
+          <a href="">
+            <h3>pets care service</h3>
+          </a>
+        </div>
+      </div>
+      <div class="topitem">
+        <div class="topitemimg" data-aos="flip-right">
+          <a href="">
+            <img src="image/musical instrument.png" alt="">
+          </a>
+        </div>
+        <div class="topitemheading">
+          <a href="">
+            <h3>musical instruments</h3>
+          </a>
+        </div>
+      </div>
+      <div class="topitem">
+        <div class="topitemimg" data-aos="flip-right">
+          <a href="">
+            <img src="image/fitness sports.jpg" alt="">
+          </a>
+        </div>
+        <div class="topitemheading">
+          <a href="">
+            <h3>fitness & sports equipments</h3>
+          </a>
+        </div>
+
+      </div>
+
+
+      <div class="topitem">
+        <div class="topitemimg" data-aos="flip-right">
+          <a href="">
+            <img src="image/mobile washroom.jpg" alt="">
+          </a>
+        </div>
+        <div class="topitemheading">
+          <a href="">
+            <h3>mobile washroom</h3>
+          </a>
+        </div>
+
+      </div>
+      <div class="topitem">
+        <div class="topitemimg" data-aos="flip-right">
+          <a href="">
+            <img src="image/gardening.png" alt="">
+          </a>
+        </div>
+        <div class="topitemheading">
+          <a href="">
+            <h3>gardening</h3>
+          </a>
+        </div>
+
+      </div>
+      <div class="topitem">
+        <div class="topitemimg" data-aos="flip-right">
+          <a href="">
+            <img src="image/camera & lens.png" alt="">
+          </a>
+        </div>
+        <div class="topitemheading">
+          <a href="">
+            <h3>camera &lens</h3>
+          </a>
+        </div>
+
+      </div>
+      <div class="topitem">
+        <div class="topitemimg" data-aos="flip-right">
+          <a href="">
+            <img src="image/machines and tools.png" alt="">
+          </a>
+        </div>
+        <div class="topitemheading">
+          <a href="">
+            <h3>machines and tools</h3>
+          </a>
+        </div>
+
+      </div>
+      <div class="topitem">
+        <div class="topitemimg" data-aos="flip-right">
+          <a href="">
+            <img src="image/generators.png" alt="">
+
+          </a>
+        </div>
+        <div class="topitemheading">
+          <a href="">
+            <h3>generators</h3>
+
+          </a>
+        </div>
+
+      </div>
+      <div class="topitem">
+        <div class="topitemimg">
+          <a href="">
+            <img src="image/books.jpg" alt="">
+
+          </a>
+        </div>
+        <div class="topitemheading">
+          <a href="">
+            <h3>books</h3>
+
+          </a>
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="slidebtn" style="text-align: center;">
+      <button
+        style="width: 50px; height: 50px;  background-color: aqua; border-radius: 50%; font-size:32px; font-weight: 700;"
+        type="button" onclick="prev()">
+        < </button>
+          <button
+            style="width: 50px; height: 50px; background-color: aqua; border-radius: 50%; font-size:32px;  font-weight: 700;"
+            onclick="next()" type="button"> >
+          </button>
+
+    </div>
+  </div>
+  <script>
+    const images = document.querySelectorAll(".topitem");
+    let count = 0;
+    function next() {
+      if (images.length - 8 == count) return;
+      count++;
+      for (topitem of images) {
+        topitem.style.transform = ` translatex(-${count * 160}px)`;
+
+      }
+
+    }
+    function prev() {
+      if (count == 0) return;
+      count--;
+      for (topitem of images) {
+        topitem.style.transform = ` translatex(-${count * 160}px)`;
+
+      }
+
+    }
+
+  </script>
+
+
+  <!-- --------------------------------------- -->
+  <div class="latestaddition" data-aos="fade-right" data-aos-duration="1000">
+    <div class="latestheading">
+      <h3>latest addition</h3>
+      <button class="viewall">view all</button>
+
+
+    </div>
+    <div class="latestitem">
+      <div class="latestitem1">
+        <div class="latestimg">
+          <a href="">
+            <img src="image/dumbales.jpeg" alt="">
+          </a>
+        </div>
+        <div class="latestheading1">
+          <h4>
+            <a href="">
+              Dumbbells - Rate Per Kg </a>
+          </h4>
+          <p>
+            Price On Request
+          </p>
+          <a href="">
+            <button class="takeonrent"> take on rent</button>
+
+          </a>
+        </div>
+      </div>
+
+
+      <!-- ============== -->
+
+      <div class="latestitem1">
+        <div class="latestimg">
+          <a href="">
+            <img src="image/auotomobiles.png" alt="">
+          </a>
+        </div>
+        <div class="latestheading1">
+          <h4>
+            <a href="">
+              automobiles </a>
+          </h4>
+          <p>
+            Price On Request
+          </p>
+          <a href="">
+            <button class="takeonrent"> take on rent</button>
+
+          </a>
+        </div>
+      </div>
+
+      <!-- ============== -->
+      <div class="latestitem1">
+        <div class="latestimg">
+          <a href="">
+            <img src="image/book rental.jpeg" alt="">
+          </a>
+        </div>
+        <div class="latestheading1">
+          <h4>
+            <a href="">
+              book rental </a>
+          </h4>
+          <p>
+            Price On Request
+          </p>
+          <a href="">
+            <button class="takeonrent"> take on rent</button>
+
+          </a>
+        </div>
+      </div> <!-- ============== -->
+      <div class="latestitem1">
+        <div class="latestimg">
+          <a href="">
+            <img src="image/counstraction machines.png" alt="">
+          </a>
+        </div>
+        <div class="latestheading1">
+          <h4>
+            <a href="">
+              counstraction and machines </a>
+          </h4>
+          <p>
+            Price On Request
+          </p>
+          <a href="">
+            <button class="takeonrent"> take on rent</button>
+
+          </a>
+        </div>
+      </div> <!-- ============== -->
+      <div class="latestitem1">
+        <div class="latestimg">
+          <a href="">
+            <img src="image/camera & lens.png" alt="">
+          </a>
+        </div>
+        <div class="latestheading1">
+          <h4>
+            <a href="">
+              camera and lens </a>
+          </h4>
+          <p>
+            Price On Request
+          </p>
+          <a href="">
+            <button class="takeonrent"> take on rent</button>
+
+          </a>
+        </div>
+      </div> <!-- ============== -->
+      <div class="latestitem1">
+        <div class="latestimg">
+          <a href="">
+            <img src="image/kids utilites.png" alt="">
+          </a>
+        </div>
+        <div class="latestheading1">
+          <h4>
+            <a href="">
+              kids utilites and careimg </a>
+          </h4>
+          <p>
+            Price On Request
+          </p>
+          <a href="">
+            <button class="takeonrent"> take on rent</button>
+
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- --------renting 4 service------ -->
+
+  <div class="madeeasy">
+    <div class="madeeasyheading">
+      <h3><span>r</span>eating 4 <span>m</span>ade <span>e</span>asy</h3>
+      <!-- <hr style="color: gray; height: 2px;"> -->
+      <img src="image/download.gif" alt="" width="100%" height="400px" data-aos="flip-right" data-aos-duration="2000">
+    </div>
+    <div class="madeservice">
+      <div class="madeservice1">
+        <img src="image/kyc verified.png" alt="">
+        <div class="madeservice1heading">
+          <h4>kyc verified user</h4>
+        </div>
+      </div>
+
+      <div class="madeservice1">
+        <img src="image/customer support.png" alt="">
+        <div class="madeservice1heading">
+          <h4>24 x 7 customer support</h4>
+        </div>
+      </div>
+
+      <div class="madeservice1">
+        <img src="image/secure payment.png" alt="">
+        <div class="madeservice1heading">
+          <h4>secure payment</h4>
+        </div>
+      </div>
+
+      <div class="madeservice1">
+        <img src="image/refundable security.png" alt="">
+        <div class="madeservice1heading">
+          <h4>`100% refundable security</h4>
+        </div>
+      </div>
+
+      <div class="madeservice1">
+        <img src="image/free delivery.png" alt="">
+        <div class="madeservice1heading">
+          <h4>free delivery</h4>
+        </div>
+      </div>
+      <div class="madeservice1">
+        <img src="image/verifed product.png" alt="">
+        <div class="madeservice1heading">
+          <h4> verified product</h4>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  </div>
+  </div>
+  <!-- ==========rent by categories=========== -->
+
+  <div class="rentcategory">
+    <div class="rentcathead">
+      <h3>rent by category</h3>
+      <button clas="viewall">viewall</button>
+
+    </div>
+
+
+    <!-- item==== -->
+    <div class="rentcatitem">
+      <div class="rentcat1">
+
+        <img src="image/biking jecjet.jpeg" alt="">4
+
+        <a href="">
+          <h6>biking and hiking jacket</h6>
+        </a>
+
+      </div>
+      <!-- '''''''''''''' -->
+      <div class="rentcat1">
+        <img src="image/auotomobiles.png" alt="">
+        <a href="">
+          <h6>automobiles</h6>
+
+        </a>
+      </div>
+      <!-- '''''''''''''' -->
+      <div class="rentcat1">
+        <img src="image/book rental.jpeg" alt="">
+        <a href="">
+          <h6>books</h6>
+
+        </a>
+      </div> <!-- '''''''''''''' -->
+      <div class="rentcat1">
+        <img src="image/camera & lens.png" alt="">
+        <a href="">
+          <h6>camera and lens</h6>
+
+        </a>
+      </div> <!-- '''''''''''''' -->
+      <div class="rentcat1">
+        <img src="image/counstraction machines.png" alt="">
+        <a href="">
+          <h6>conustruction service</h6>
+
+        </a>
+      </div> <!-- '''''''''''''' -->
+      <div class="rentcat1">
+        <img src="image/electronic item.png" alt="">
+        <a href="">
+          <h6>electronic applines</h6>
+
+        </a>
+      </div> <!-- '''''''''''''' -->
+      <div class="rentcat1">
+        <img src="image/fitness sports.jpg" alt="">
+        <a href="">
+          <h6>fitness and sporting</h6>
+        </a>
+      </div> <!-- '''''''''''''' -->
+      <div class="rentcat1">
+        <img src="image/furniture.png" alt="">
+        <a href="">
+          <h6>furniture</h6>
+        </a>
+      </div> <!-- '''''''''''''' -->
+      <div class="rentcat1">
+        <img src="image/gaming product.jpg" alt="">
+        <a href="">
+          <h6>gaming and product</h6>
+        </a>
+      </div> <!-- '''''''''''''' -->
+      <div class="rentcat1">
+        <img src="image/generators.png" alt="">
+        <a href="">
+          <h6>genraors</h6>
+        </a>
+      </div> <!-- '''''''''''''' -->
+      <div class="rentcat1">
+        <img src="image/kids utilites.png" alt="">
+        <a href="">
+          <h6>kids utilites</h6>
+        </a>
+      </div> <!-- '''''''''''''' -->
+      <div class="rentcat1">
+        <img src="image/kundan & beads.jpeg" alt="">
+        <a href="">
+          <h6>kundan and wedding</h6>
+        </a>
+      </div> <!-- '''''''''''''' -->
+      <div class="rentcat1">
+        <img src="image/machines and tools.png" alt="">
+        <a href="">
+          <h6>machine and tools</h6>
+        </a>
+      </div> <!-- '''''''''''''' -->
+      <div class="rentcat1">
+        <img src="image/nikon speaker.jpeg" alt="">
+        <a href="">
+          <h6>nikon speakers</h6>
+        </a>
+      </div> <!-- '''''''''''''' -->
+      <div class="rentcat1">
+        <img src="image/mobile washroom.jpg" alt="">
+        <a href="">
+          <h6>mobile washroom</h6>
+        </a>
+      </div>
+      <!-- '''''''''''''' -->
+      <div class="rentcat1">
+
+        <img src="image/pets care service.png" alt="">
+        <a href="">
+          <h6>pets care service</h6>
+        </a>
+
+      </div>
+      <!-- '''''''''''''' -->
+      <div class="rentcat1">
+        <img src="image/dumbales.jpeg" alt="">
+        <a href="">
+          <h6>dumbles asseries</h6>
+        </a>
+      </div>
+      <!-- '''''''''''''' -->
+      <div class="rentcat1">
+        <img src="image/weeding couture.png" alt="">
+        <a href="">
+          <h6>wedding culture</h6>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="accesspage" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="accesspagecontent">
+      <h4>
+
+        Access anything on the go:
+      </h4>
+      <p>
+        Rent in at the tap of the button. The Rentit4me App is the easiest way to find and rent in what you need.
+      </p>
+      <form action="" method="post">
+        <input type="text" class="searchhere" placeholder="enter your e-mail">
+        <input type="submit" class="seracbtn" value="sbscribe now">
+      </form><br>
+
+    </div>
+    <div class="applink" style="margin-left: 800px; margin-top: 70px;">
+      <a href=""><img src="image/app store.png" alt="" width="150px" height="40px"></a>
+      <a href=""><img src="image/google play.png" alt="" width="150px" height="40px"></a>
+    </div>
+  </div>
+
+  <div class="latestblog">
+    <div class="latestblogheading">
+      <h3>latest blog</h3>
+    </div>
+    <div class="latestblogcontent">
+      <div class="latestblogcontentitem">
+        <div class="blogimg">
+          <img src="image/how to rent.png" alt="" width="100%" height="200px">
+        </div>
+
+        <a href="">
+          <h4>
+            How to Rent a Drone for Your N...
+
+          </h4>
+        </a>
+        <p>
+          Rent a drone for your vacation and capture stunning moments effortlessly. Discover how to easily secure a
+          drone rental for your next adventure!
+        </p>
+      </div>
+      <!-- ---------------------  -->
+      <div class="latestblogcontentitem">
+        <div class="blogimg">
+          <img src="image/key points.png" alt="" width="100%" height="200px">
+        </div>
+        <div class="blogarticle">
+          <a href="">
+            <h4>
+              Key Points to Consider When Re...
+
+            </h4>
+          </a>
+          <p>
+            Rent a drone for your vacation and capture stunning moments effortlessly. Discover how to easily secure a
+            drone rental for your next adventure!
+          </p>
+        </div>
+      </div>
+      <!-- --------------------  -->
+      <div class="latestblogcontentitem">
+        <div class="blogimg">
+          <img src="image/top 10 resion.jpg" alt="" width="100%" height="200px">
+        </div>
+
+
+        <a href="">
+          <h4>
+            Top 10 Reasons Why Renting is...
+
+          </h4>
+        </a>
+        <p>
+          Rent a drone for your vacation and capture stunning moments effortlessly. Discover how to easily secure a
+          drone rental for your next adventure!
+        </p>
+      </div>
+      <!-- --------------------  -->
+      <div class="latestblogcontentitem">
+        <div class="blogimg">
+          <img src="image/top chellange.png" alt="" width="100%" height="200px">
+        </div>
+
+
+        <a href="">
+          <h4>
+            Top ten challenges in arrangin...
+          </h4>
+        </a>
+        <p>
+          Rent a drone for your vacation and capture stunning moments effortlessly. Discover how to easily secure a
+          drone rental for your next adventure!
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="faqsection ">
+    <h3 class="bg-dark text-light text-center">F.A.Q</h3>
+
+
+    <!-- Accordion Item #1 -->
+
+    <div class="faq1">
+      <div>.1</div>
+      <h6> Why Rentit4me?</h6>
+      <button class=""
+      style="width: 30px; margin-left: -30px; height: 20px; margin-top: 0px; background-color: transparent; border: none; font-size: 32px; padding-left: 6px;"
+      type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false">+
+      </button>
+
+      <!-- <hr> -->
+
+    </div>
+
+
+    <div id="collapseOne" class="accordion-collapse collapse   w-75" style="width:75%; margin:auto; "
+      aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body  " style="font-size: 12px; ">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin
+        adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+        as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+        overriding our default variables. It's also worth noting that just about any HTML can go within the
+        <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+
+  <!-- </h2> -->
+  <div class="faqsection">
+    <div class="faq1">
+      <div>.2</div>
+      <h6> How does Rentit4me work?</h6>
+      <button class=""
+      style="width: 30px; margin-left: -30px; height: 20px; margin-top: 0px; background-color: transparent; border: none; font-size: 32px; padding-left: 6px;"
+      type="
+    button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" >+
+      </button>
+
+      <!-- <hr> -->
+
+    </div>
+
+
+    <div id="collapseTwo" class="accordion-collapse collapse  w-75"
+      style="width:75%; margin:auto; border-bottom: 2px solid chocolate  " aria-labelledby="headingTwo"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body  " style="font-size: 12px;">
+        <strong> Rentit4Me is the only platform </strong> where one can Give On Rent (give your extra / unused products
+        on rent) as well as
+        Rent In (Take things on rent) anywhere, anytime.
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================ -->
+  <div class="faqsection">
+
+    <div class="faq1  ">
+      <div>.3</div>
+      <h6> Why should I Give On Rent on Rentit4me?</h6>
+      <button class=""
+      style="width: 30px; margin-left: -30px; height: 20px; margin-top: 0px; background-color: transparent; border: none; font-size: 32px; padding-left: 6px;"
+      type="
+  button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">+
+      </button>
+
+      <!-- <hr> -->
+
+    </div>
+
+
+    <div id="collapseThree" class="accordion-collapse collapse  w-75"
+      style="width:75%; margin:auto; border-bottom: 2px solid chocolatez  " aria-labelledby="headingThree"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body  " style="font-size: 12px;">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin
+        adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+        as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+        overriding our default variables. It's also worth noting that just about any HTML can go within the
+        <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <!-- ============================ -->
+  <div class="faqsection">
+
+    <div class="faq1">
+      <div>.4</div>
+      <h6> How To Give On Rent a Product on Rentit4me?</h6>
+      <button class=""
+        style="width: 30px; margin-left: -30px; height: 20px; margin-top: 0px; background-color: transparent; border: none; font-size: 32px; padding-left: 6px;"
+        type="
+  button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false">+
+      </button>
+
+      <!-- <hr> -->
+
+    </div>
+
+
+    <div id="collapseFour" class="accordion-collapse collapse  w-75"
+      style="width:75%; margin:auto; border-bottom: 2px solid chocolatez  " aria-labelledby="headingFour"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body  " style="font-size: 12px;">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin
+        adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+        as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+        overriding our default variables. It's also worth noting that just about any HTML can go within the
+        <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <!-- ================== -->
+  <div class="faqsection">
+
+    <div class="faq1 ">
+      <div>.5</div>
+      <h6> How To get a Product on rent (Rent in) from Rentit4me?</h6>
+      <button class="border-none "
+        style="width: 30px; margin-left: -30px; height: 20px; margin-top: 0px; background-color: transparent; border: none; font-size: 32px; padding-left: 6px;"
+        type="
+  button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false">+
+      </button>
+
+      <!-- <hr> -->
+
+    </div>
+
+
+    <div id="collapseFive" class="accordion-collapse collapse  w-75"
+      style="width:75%; margin:auto; border-bottom: 2px solid chocolatez  " aria-labelledby="headingFive"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body  " style="font-size: 12px;">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin
+        adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+        as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+        overriding our default variables. It's also worth noting that just about any HTML can go within the
+        <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="aboutus container-fluid">
+    <div class="container">
+      <h3>abouts us</h3>
+      <hr style="background-color: rgb(151, 148, 148); height: 2px;">
+      <p>
+        Rentit4me “R4ME” is the largest rental marketplace where anyone can rent-out anything for free and earn
+        money
+        with the listings. Rentit4me also offers a huge bank of listings from which you can also rent- in anything
+        you
+        desire. <br>
+
+        With Rentit4me, you can list and monetize any of your unused assets starting from Jewellery, Electronics
+        item,
+        Furniture, Gym equipment, Musical Instruments to Cars, Bikes, Drones, Medical equipment and the list is
+        endless.
+        The process of listing is hassle free, with no paperwork and customizable rental period.
+
+
+      </p>
+      <hr style="background-color: rgb(139, 133, 132); height: 2px;">
+      <h6>
+
+        Rent Furniture|Rent Drone|Rent Weddings Dresses| Rent jewellery|Rent Home Appliances|Rent Car|Rent Bike|Rent
+        Musical instruments|Rent Fitness equipment|Rent Books Rent Toys|Rent Camera & Lenses|Rent Gaming
+        Console|Rent
+        Baby Stuff|Rent Medical/Health Equipments
+      </h6>
+    </div>
+
+  </div>
+  <div class="footer">
+    <div class="footer1">
+      <div class="footer2">
+        <img src="image/footer logo renitie4me.png" alt="">
+        <h5>address : <span>gurgaon</span></h5>
+        <h5>telephone : <span>1234567890</span></h5>
+      </div>
+      <!-- ........  -->
+      <div class="footer2">
+        <ul style="list-style-type: none;">
+          <h5> <span>|</span> menu</h5>
+
+          <li><a href="">Add A Product</a></li>
+          <li><a href="">contact us</a></li>
+          <li><a href="">abouts us</a></li>
+          <li><a href="">Submit Requirement / RFP</a></li>
+
+        </ul>
+
+      </div>
+      <!-- ........  -->
+      <div class="footer2">
+        <ul style="list-style-type: none;">
+          <h5><span>|</span> pages</h5>
+
+          <li><a href="">Add A Product</a></li>
+          <li><a href="">contact us</a></li>
+          <li><a href="">abouts us</a></li>
+          <li><a href="">Submit Requirement / RFP</a></li>
+
+        </ul>
+
+      </div>
+      <!-- ........  -->
+      <div class="footer2">
+        <ul style="list-style-type: none;">
+          <h5><span>|</span> supports</h5>
+
+          <li><a href="">Add A Product</a></li>
+          <li><a href="">contact us</a></li>
+          <li><a href="">abouts us</a></li>
+          <li><a href="">Submit Requirement / RFP</a></li>
+
+        </ul>
+
+      </div>
+
+
+    </div>
+    <div class="footerotherlink">
+      <div class="otherlink">
+
+        <a href=""><img src="image/facebook icon.png" alt="" width="30px" height="30px"></a>
+        <!-- <a href=""><img src="image/teitter icon.png" alt="" width="30px" height="30px"></a>
+<a href=""><img src="image/you tube icon.png" alt="" width="30px" height="30px"></a>
+<a href=""><img src="image/linkedin icon.png" alt="" width="30px" height="30px"></a> -->
+      </div>
+
+      <div class="otherlink">
+
+        <!-- <a href=""><img src="image/facebook icon.png" alt="" width="30px" height="30px"></a> -->
+        <a href=""><img src="image/teitter icon.png" alt="" width="30px" height="30px"></a>
+        <!-- <a href=""><img src="image/you tube icon.png" alt="" width="30px" height="30px"></a> -->
+        <!-- <a href=""><img src="image/linkedin icon.png" alt="" width="30px" height="30px"></a> -->
+      </div>
+      <div class="otherlink">
+
+        <!-- <a href=""><img src="image/facebook icon.png" alt="" width="30px" height="30px"></a> -->
+        <!-- <a href=""><img src="image/teitter icon.png" alt="" width="30px" height="30px"></a> -->
+        <a href=""><img src="image/you tube icon.png" alt="" width="30px" height="30px"></a>
+        <!-- <a href=""><img src="image/linkedin icon.png" alt="" width="30px" height="30px"></a> -->
+      </div>
+      <div class="otherlink">
+
+        <!-- <a href=""><img src="image/facebook icon.png" alt="" width="30px" height="30px"></a> -->
+        <!-- <a href=""><img src="image/teitter icon.png" alt="" width="30px" height="30px"></a> -->
+        <!-- <a href=""><img src="image/you tube icon.png" alt="" width="30px" height="30px"></a> -->
+        <a href=""><img src="image/linkedin icon.png" alt="" width="30px" height="30px"></a>
+      </div>
+
+      <div class="gooleplaylink">
+        <img src="image/google play.png" alt="" width="180px" height="50px">
+        <img src="image/app store.png" alt="" width="180px" height="50px">
+
+      </div>
+    </div>
+    <p class="Copyright">
+      Copyright 2023 - All right Reserved. | A Unit Of Omshreem Technologies Pvt. Ltd. | Privacy Policy || Terms of
+      Use
+    </p>
+
+
+  </div>
+
+</body>
+
+
+
+</html>

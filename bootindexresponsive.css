@@ -1,0 +1,1002 @@
+@media screen and (max-width:700px){
+
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    body {
+        width: auto;
+        height: fit-content;
+        background-color: rgb(132, 138, 143);
+    }
+    
+    
+    /* 
+    .logo {
+        width: fit-content;
+        height: fit-content;
+        margin-left: -70px;
+    } */
+    .navbar-brand {
+        padding: 0px;
+        margin-left:10;
+    }
+    .navbar-brand img {
+        width: 70px;
+        height: 40px;
+        
+    }
+    
+    .location {
+        width: 230px;
+        height: 40px;
+        border-radius: 20px;
+        border: solid 2px rgb(82, 80, 80, 0.5);
+        margin-top: 10px;
+        margin-left:5px;
+        background-color: white;
+        color: black;
+        /* padding-left: 20px; */
+    
+        text-transform: capitalize;
+        /* text-align: center; */
+        align-items: center;
+        display: flex;
+    
+    
+    }
+    
+    .livelocation {
+        width: 180px;
+        font-size: 22px;
+        border-radius: 20px;
+    
+    }
+    
+    .locationsearch {
+        width: 45px;
+        border-radius: 10px;
+        border: none;
+    }
+    
+    .locationsearch img {
+        width: 40px;
+        height: 37px;
+        border-radius: 20px;
+    
+    }
+    .rentbtn{
+        margin-left: -20px;
+    }
+    
+    .rentbtn button {
+        width: 100px;
+        height: 40px;
+        margin-left: 10px;
+        margin-top: 10px;
+        background-color: rgb(236, 102, 13);
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+        border-radius: 20px;
+        color: aliceblue;
+        text-transform: capitalize;
+        transition: 2s;
+        align-items: center;
+        outline: none;
+        border: none;
+        
+    }
+    
+    .rentbtn button:hover {
+
+        
+      
+        width: 100px;
+        height: 40px;
+        margin-left: 10px;
+        margin-top: 10px;
+        background-color: rgb(13, 46, 236);
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+        border-radius: 20px;
+        color: aliceblue;
+        text-transform: capitalize;
+        transition: 2s;
+        align-items: center;
+        outline: none;
+        border: none; 
+    }
+    
+    .dropdown {
+        width: 300px;
+        height: 35px;
+        margin-top: 10px;
+        margin-left: 10px;
+        overflow-x: visible;
+    
+    
+    }
+    
+    .dropdown .btn {
+        width: 300px;
+        height: 40px;
+        border-radius: 30px;
+        background-color: white;
+        font-size: 15px;
+        text-transform: capitalize;
+        padding-left: -3px;
+        border: black 2px solid;
+        text-align: left;
+    
+    }
+    
+    .searchbar {
+        width: 200px;
+        height: 35px;
+        margin-left: 30px;
+        border-radius: 50px;
+    
+    }
+    
+    .search {
+        width: 200px;
+        height: 35px;
+        margin-top: 10px;
+        /* background-color: rgb(166, 166, 240); */
+        border-radius: 50px;
+        font-size: 18px;
+        /* border: none;
+        outline: none; */
+        border: black 2px solid;
+    
+    
+    
+    
+    }
+    
+    .rentbtnresponsive {
+        display: none;
+    }
+    
+    .search input {
+        width: 190px;
+        border-radius: 50px;
+        padding-left: 10PX;
+        padding-right: 10PX;
+        border: none;
+        outline: none;
+    
+    }
+    
+    .search button {
+        width: 40px;
+        height: 35px;
+        border-radius: 30px;
+        padding: 0px;
+        margin: 0px;
+        background-color: white;
+    }
+    
+    .search button img {
+        width: 30px;
+        height: 25px;
+        border-radius: 30px;
+        background-color: darkgoldenrod;
+    
+    }
+    
+    .signbtn {
+        width: 70px;
+        height: 40px;
+        margin-right:10px;
+        margin-top: 10px;
+        background-color: rgb(236, 102, 13);
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+        border-radius: 20px;
+        color: aliceblue;
+        text-transform: capitalize;
+        transition: 1.5s;
+        align-items: center;
+        outline: none;
+        border: none;
+    }
+    
+    .signbtn:hover {
+        width: 130px;
+        height: 40px;
+        margin-left: 30px;
+        margin-top: -3px;
+        background-color: rgb(8, 14, 88);
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 20px;
+        color: aliceblue;
+        text-transform: capitalize;
+        transition: 1.5s;
+        align-items: center;
+    }
+    
+    .basketicon img {
+        width: 40px;
+        height: 40px;
+        border: solid 3px chocolate;
+        border-radius: 30px;
+        margin-top: 10px;
+    }
+    
+    .basketicon img:hover {
+        margin-top: 10px;
+    
+        width: 40px;
+        height: 40px;
+        background-color: rgb(250, 151, 80);
+        border: solid 3px rgb(142, 134, 245);
+    
+        border-radius: 30px;
+    
+    
+    }
+    
+    .imgslider {
+        width: 100%;
+        height: fit-content;
+        /* margin-top: 100px; */padding-top: 70px;
+    }
+    
+    .w-100 {
+        width: 100%;
+        height: 400px;
+    }
+    
+    .toprentalcategory {
+        width: 100%;
+        height: 500px;
+        padding-top: 20px;
+    }
+    
+    .toprentalheading {
+        width: 100%;
+        height: 80px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        padding-left: 70px;
+        text-transform: capitalize;
+        gap: 50px;
+        color: blue;
+    
+    }
+    
+    .toprentalheading h1 {
+        font-weight: 400;
+    }
+    
+    .toprentalheading button {
+        width: 130px;
+        height: 40px;
+        margin-left: -30px;
+    
+        background-color: rgb(236, 102, 13);
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 20px;
+        color: aliceblue;
+        text-transform: capitalize;
+        transition: 1.5s;
+        align-items: center;
+        outline: none;
+        border: none;
+    
+    
+    }
+    
+    .toprentalheading button:hover {
+        width: 130px;
+        height: 40px;
+        /* margin-left: 10px; */
+        margin-top: -10px;
+        background-color: rgb(8, 14, 88);
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 20px;
+        color: aliceblue;
+        text-transform: capitalize;
+        transition: 1.5s;
+        align-items: center;
+    
+    }
+    
+    
+    /* -----rent item--------- */
+    .toprentitem {
+        width: 85%;
+        height: 350px;
+        overflow: hidden;
+        /* background-color: blanchedalmond; */
+        margin: auto;
+        display: flex;
+        gap: 35px;
+        padding-left: 50px;
+        padding-top: 50px;
+        /* overflow-x: scroll; */
+        overflow: hidden;
+    }
+    
+    .topitem {
+        width: 160px;
+        height: 160px;
+        text-align: center;
+    
+    
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .topitemimg {
+        overflow: hidden;
+        border: 4px solid blue;
+        border-radius: 50%;
+        overflow: hidden;
+    
+    }
+    
+    .topitemimg:hover {
+        border: 4px solid rgb(255, 149, 0);
+    
+    }
+    
+    
+    .topitem img {
+        width: 100px;
+        height: 100px;
+        background-color: aquamarine;
+        /* margin-top: -5px;
+        margin-left: -5px; */
+    
+    
+    
+    
+    
+    }
+    
+    .topitem img:hover {
+        scale: 1.2;
+    }
+    
+    .topitemheading a,
+    .topitemheading a h3 {
+        font-size: 20px;
+        color: rgb(55, 55, 248);
+        text-transform: capitalize;
+        text-decoration: none;
+        margin-top: 20px;
+    
+    }
+    
+    .topitemheading a h3:hover {
+        color: rgb(255, 89, 5);
+        /* text-decoration: underline; */
+    }
+    
+    .madeeasy {
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 50px;
+        /* padding: 50px; */
+    
+    }
+    
+    .madeeasyheading {
+        width: 95%;
+        height: fit-content;
+        margin: 50px;
+        /* margin-top: 100px; */
+        overflow: hidden;
+        border-bottom: 2px gray solid;
+    }
+    
+    .madeeasyheading h3 {
+        color: rgb(247, 125, 11);
+        font-size: 42px;
+        font-weight: 600;
+        text-transform: capitalize;
+    
+    }
+    
+    .madeeasyheading h3 span {
+        color: rgb(2, 2, 83);
+        font-weight: 700;
+        font-size: 62px;
+    }
+    
+    .madeservice {
+        width: 100%;
+        height: 200px;
+        margin: auto;
+        padding-top: 0px;
+        padding-left: 90px;
+        display: flex;
+        flex-wrap: wrap;
+    
+        /* background-color: aqua; */
+        gap: 50px
+    }
+    
+    .madeservice1 {
+        padding-top: 50px;
+        width: 140px;
+        height: 200px;
+        /* margin-left: 30px; */
+    }
+    
+    .madeservice1 img {
+        width: 70px;
+        height: 80px;
+    
+    }
+    
+    .latestaddition {
+        width: 100%;
+        height: fit-content;
+        margin-top: 70px;
+    
+        background-color: rgb(252, 252, 253);
+        padding-bottom: 50px;
+    }
+    
+    .latestitem {
+        width: 90%;
+        margin: auto;
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        /* background-color: aquamarine; */
+        margin-top: 30px;
+    
+    }
+    
+    .latestitem1 {
+        width: 200px;
+        height: fit-content;
+        /* background-color: blueviolet; */
+    
+    }
+    
+    .latestimg {
+        width: 200px;
+        height: 200PX;
+        overflow: hidden;
+    
+    }
+    
+    .latestimg img {
+        width: 150px;
+        height: 200px;
+        margin-left: 25px;
+        border-radius: 20px;
+    
+    }
+    
+    .latestimg img:hover {
+        /* width: 150px;
+        height: 200px;
+        margin-left:25px ; */
+        scale: 1.1;
+        overflow: hidden;
+    }
+    
+    .latestheading {
+        width: 85%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .latestheading h3 {
+        text-transform: capitalize;
+        font-size: 42px;
+    }
+    
+    .latestheading h3::selection {
+        color: yellow;
+        background-color: blueviolet;
+    }
+    
+    .latestheading .viewall {
+        width: 130px;
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 30px;
+    
+        background-color: rgb(236, 102, 13);
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 20px;
+        color: aliceblue;
+        text-transform: capitalize;
+        transition: 1.5s;
+        align-items: center;
+        outline: none;
+        border: none;
+    }
+    
+    .latestheading .viewall:hover {
+        width: 130px;
+        height: 40px;
+        /* margin-left: 30px; */
+        margin-top: -5px;
+        background-color: rgb(35, 13, 236);
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 20px;
+        color: aliceblue;
+        text-transform: capitalize;
+        transition: 1.5s;
+        align-items: center;
+        outline: none;
+        border: none;
+    }
+    
+    .latestheading1 {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+    
+    }
+    
+    .latestheading1 .takeonrent {
+        width: 130px;
+        height: 40px;
+    
+    
+        background-color: rgb(236, 102, 13);
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 20px;
+        color: aliceblue;
+        text-transform: capitalize;
+        transition: 1.5s;
+        align-items: center;
+        outline: none;
+        border: none;
+    }
+    
+    .latestheading1 .takeonrent:hover {
+        width: 130px;
+        height: 40px;
+        /* margin-left: 30px; */
+        margin-top: -5px;
+        background-color: rgb(35, 13, 236);
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 20px;
+        color: aliceblue;
+        text-transform: capitalize;
+        transition: 1.5s;
+        align-items: center;
+        outline: none;
+        border: none;
+    }
+    
+    .latestheading1 h4 {
+        width: 150px;
+        height: 50px;
+    }
+    
+    .latestheading1 a {
+        color: rgb(18, 7, 83);
+        text-decoration: none;
+    
+    }
+    
+    .rentcategory {
+        width: 100%;
+        height: 500px;
+        /* background-color: blueviolet; */
+    }
+    
+    .rentcathead {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        border-bottom: solid 2px goldenrod;
+    
+    }
+    
+    .rentcathead h3 {
+        text-transform: capitalize;
+        font-size: 32px;
+        color: rgb(4, 4, 156);
+        margin-left: 100px;
+    }
+    
+    .rentcathead button {
+        margin-left: 30px;
+        width: 130px;
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 30px;
+    
+        background-color: rgb(236, 102, 13);
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 20px;
+        color: aliceblue;
+        text-transform: capitalize;
+        transition: 1.5s;
+        align-items: center;
+        outline: none;
+        border: none;
+    
+    }
+    
+    .rentcathead button:hover {
+        width: 130px;
+        height: 40px;
+        /* margin-left: 30px; */
+        margin-top: -5px;
+        background-color: rgb(35, 13, 236);
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 20px;
+        color: aliceblue;
+        text-transform: capitalize;
+        transition: 1.5s;
+        align-items: center;
+        outline: none;
+        border: none;
+    }
+    
+    .rentcatitem {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-top: 20px;
+        padding-left: 100px;
+    
+        margin: auto;
+        /* padding-bottom: 100px; */
+        /* overflow: scroll; */
+    
+    }
+    
+    .rentcat1 {
+        width: 180px;
+        height: 260px;
+        text-align: center;
+        border: 2px solid gray;
+        overflow: hidden;
+        box-shadow: 10px;
+    
+    }
+    
+    .rentcat1 a {
+        text-decoration: none;
+    }
+    
+    .rentcat1 img {
+        width: 99.5%;
+        margin: auto;
+        height: 200px;
+    
+    }
+    
+    .rentcat1 img:hover {
+        scale: 1.1;
+    
+    }
+    
+    .rentcat1 h6 {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        color: rgb(81, 81, 238);
+        border-top: 1px solid gray;
+        text-transform: capitalize;
+    
+    }
+    
+    .rentcat1 a h6:hover {
+        text-decoration: none;
+        color: chocolate;
+    }
+    
+    .accesspage {
+        margin-top: 500px;
+        width: 100%;
+        height: 600px;
+        background-image: url(image/access\ anything.png);
+        background-repeat: no-repeat;
+        background-size: 100%, 600px;
+        padding-bottom: 100px;
+    }
+    
+    .accesspagecontent {
+        position: relative;
+        width: 350px;
+        height: 400px;
+        top: 100px;
+        left: 800px;
+        color: aliceblue;
+    }
+    
+    .accesspagecontent h4 {
+        text-transform: capitalize;
+    
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 30px;
+    
+    }
+    
+    .accesspagecontent p {
+        margin-bottom: 20px;
+    }
+    
+    .searchhere {
+        width: 300px;
+        height: 50px;
+        border-radius: 20px;
+        margin-top: 20px;
+        font: 15px;
+        text-align: center;
+    }
+    
+    .seracbtn {
+        border-radius: 20px;
+    
+        margin-top: 15px;
+        width: 200px;
+        height: 50px;
+        margin-left: 100px;
+        background-color: rgb(255, 87, 9);
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: aliceblue;
+        transition: 1s;
+    
+    }
+    
+    .seracbtn:hover {
+        margin-top: -1px;
+        transition: 1s;
+        background-color: rgb(21, 9, 255);
+    
+    }
+    
+    .latestblog {
+        width: 100%;
+        height: 600px;
+        padding-top: 50px;
+    
+    }
+    
+    .latestblogheading {
+        width: 100%;
+        height: fit-content;
+    
+    }
+    
+    .latestblogheading h3 {
+        text-transform: capitalize;
+        color: blue;
+        font-size: 42px;
+        margin-left: 150px;
+    }
+    
+    .latestblogcontent {
+        width: 80%;
+        height: 500px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 30px;
+    }
+    
+    .latestblogcontentitem {
+        width: 22%;
+        height: fit-content;
+        /* border: rgb(28, 33, 28) solid 2px; */
+        overflow: hidden;
+        line-height: 25px;
+    }
+    
+    .latestblogcontentitem a h4 {
+        font-size: 20px;
+    }
+    
+    .latestblogcontentitem a:hover {
+        color: rgb(242, 128, 13);
+        text-decoration: none;
+    }
+    
+    .blogimg {
+        width: 100%;
+        height: 220px;
+    }
+    
+    .blogimg:hover {
+        transition: 0.5s;
+        scale: 1.1;
+        rotate: 2deg;
+    }
+    
+    .faqsection {
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 30px;
+    
+    }
+    
+    .faqsection h3 {
+        width: 80%;
+        margin-left: 140px;
+        color: black;
+        border-bottom: 2px solid chocolate;
+    
+    
+    
+    
+    }
+    
+    .faq1 {
+        width: 80%;
+        height: 70px;
+        display: flex;
+        margin: auto;
+        padding-left: 10px;
+        border-bottom: 2px solid chocolate;
+        /* border-top: 2px solid chocolate; */
+    }
+    
+    .faq1 div {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid rgb(245, 141, 5);
+        text-align: center;
+        font-size: 18px;
+        margin: auto;
+        margin-left: 10px;
+        margin-right: 0px;
+        font-weight: 600;
+    
+    }
+    
+    .faq1 h6 {
+        margin: auto;
+        font-size: 22px;
+        margin-left: 10px;
+        font-weight: 650;
+    
+    }
+    .aboutus{
+        width: 100%;
+        height: 400px;
+        background-color: rgb(133, 136, 141,0.2);
+        padding-top: 50px;
+    }
+    .container{
+        width: 80%;
+        height: 400px;
+        margin: auto;
+        /* background-color: blue; */
+    }
+    .container h3{
+        text-transform: capitalize;
+    }
+    .container p{
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .container h6{
+        font-weight: 700;
+    }
+    .footer{
+        width: 100%;height: 500px;
+        background-color: rgb(16, 16, 101);
+        padding-top: 50px;
+    }
+    .footer1{
+        width: 95%;
+        height: 300px;
+        margin-left: 2.5%;
+        /* border: solid 2px red; */
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 100px;
+    }
+    .footer2{
+        width: 23%;
+        height: fit-content;
+        margin-left: 1%;
+        color: #f3eded;
+        text-transform: capitalize;
+        padding-top: 50PX;
+    }
+    .footer2 h5 span{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .footer2 ul li{
+        line-height: 40px;
+    }
+    .footer2 ul h5 span{
+        font-size: 22px;
+        font-weight: 700;
+        color: coral;
+    }
+    .footer2 ul li a{
+        text-decoration: none;
+        color: #8d8b8b;
+    }
+    .footer2 ul li a:hover{
+        text-decoration: underline;
+        letter-spacing: 2px;
+        transition: 1s;
+        color: white;
+    }
+    .footerotherlink{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        margin-left: 150px;
+    }
+    .otherlink{
+        width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: aliceblue;
+    margin-left: 20px;
+    padding-top: 0px;
+    
+        color: white;
+    }
+    .otherlink:hover 
+    {
+      background-color: chocolate;
+      color: rgb(229, 222, 217);
+      transition: 1s;
+    }
+    
+    .otherlink a{
+        color: white;
+        font-size: 32px;
+        font-weight: 700;
+        margin: auto;
+        border-radius: 40%;
+        text-decoration: none;
+    }
+    .gooleplaylink{
+        width: 400px;
+        height: 100px;
+        display: flex;
+        gap:20px;
+        margin-left: 400px;
+    }
+    .Copyright{
+        text-align: center;
+        color: white;margin-top: 50px;
+    }
+}

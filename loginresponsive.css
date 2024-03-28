@@ -1,0 +1,85 @@
+@media screen and (max-width:900px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        width: 100%;
+        height: fit-content;
+        /* align-items: center;
+              justify-content: center; */
+
+    }
+
+    .loginpage {
+        width: 100%;
+        height: fit-content;
+        background-color: rgba(226, 228, 215, 0.7);
+
+        padding-bottom: 70px;
+        padding-top: 0px;
+        flex-wrap: wrap;
+    }
+
+    .instruction {
+        width: 500px;
+        height: 600px;
+    }
+
+    .signin1 {
+        width: 100%;
+        /* background: rgb(235, 13, 13); */
+        padding-top: 50px;
+    }
+
+    .registerbtn {
+        background: rgb(247, 109, 10);
+        border-radius: 20px;
+        width: 300px;
+        height: 35px;
+        text-transform: capitalize;
+        color: white;
+        font-weight: 500;
+    }
+
+    .registerbtn a {
+        font-size: 18px;
+    }
+
+    .signform {
+        height: fit-content;
+
+    }
+
+    .signform form input {
+        width: 300px;
+        height: 40px;
+        padding-left: 10px;
+        margin-top: 20px;
+        border: 2px solid rgb(19, 19, 19, 0.2);
+    }
+
+    .submitbtn {
+        background: #f05107;
+        width: 120px;
+        height: 30px;
+        border-radius: 20px;
+        font-weight: 500;
+        color: white;
+    }
+
+    .sociallogin {
+        font-size: 22px;
+        font-weight: 600;
+        color: rgb(54, 54, 247);
+        text-transform: capitalize;
+        letter-spacing: 2px;
+    }
+
+    .otherlnk {
+        border-radius: 40%;
+        margin-left: 10PX;
+    }
+
+}
