@@ -350,8 +350,8 @@ body {
     gap: 35px;
     padding-left: 50px;
     padding-top: 50px;
-    /* overflow-x: scroll; */
-    overflow: hidden;
+    overflow-x: scroll;
+    /* overflow: hidden; */
 }
 
 .topitem {
@@ -626,7 +626,7 @@ body {
 
 .rentcategory {
     width: 100%;
-    height: 500px;
+    height: auto;
     /* background-color: blueviolet; */
 }
 
@@ -686,7 +686,7 @@ body {
 
 .rentcatitem {
     width: 100%;
-    height: 600px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -742,7 +742,7 @@ body {
 }
 
 .accesspage {
-    margin-top: 500px;
+    /* margin-top: 500px; */
     width: 100%;
     height: 600px;
     background-image: url(image/access\ anything.png);
